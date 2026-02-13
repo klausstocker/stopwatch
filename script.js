@@ -71,7 +71,7 @@ function handleCapture() {
 
 // Function to handle finishing the race and exporting the list of bib numbers with stopwatch times
 function finishRace() {
-    const raceName = document.getElementById('raceInput').value.trim();
+    let raceName = document.getElementById('raceInput').value.trim();
     if (raceName.length == 0)
         raceName = 'Race_Name';
     const filename = raceName + '.csv';
