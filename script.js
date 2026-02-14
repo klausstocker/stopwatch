@@ -49,6 +49,7 @@ function reset() {
   elapsedTime = 0;
   updateDisplay();
   document.getElementById('startStopBtn').textContent = 'Start';
+  document.getElementById('finishersList').innerHTML = '';
 }
 
 function handleCapture() {
