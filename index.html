@@ -11,10 +11,10 @@
     <h1>Stopwatch</h1>
     <input type="text" id="raceInput" placeholder="Race Name">
     <div id="display">00:00:00.000</div>
-    <input type="text" id="bibNumberInput" placeholder="Enter Bib Number" onkeypress="handle(event)">
+    <p><input type="number" id="bibNumberInput" placeholder="Enter Bib Number" pattern="[0-9]+" onkeypress="handle(event)"></p>
     <button id="startStopBtn">Start</button>
     <button id="resetBtn">Reset</button>
-    <button id="finishRaceBtn">Finisher List</button>
+    <p><button id="finishRaceBtn">Finisher List</button></p>
     <ul id="finishersList"></ul>
   </div>
   <script src="script.js"></script>
